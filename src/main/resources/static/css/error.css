@@ -1,0 +1,185 @@
+body {
+    background-color: #2E2E2E;
+    color: #FFFFFF;
+    font-family: system-ui;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: fadeIn 0.5s ease-in;
+}
+
+.error-no {
+    font-size: 4em;
+    margin: 0;
+    animation: slideIn 0.5s ease-in-out, float1 3s infinite alternate;
+    color: var(--high-text-button);
+    position: relative; /* Necessary for the pseudo-elements */
+    overflow: hidden; /* Hide overflow for minimalistic look */
+}
+
+.error-no::before,
+.error-no::after {
+    content: attr(data-text); /* Use the same text */
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: rgba(255, 255, 255, 0.2); /* Light color for the broken connection effect */
+    opacity: 0;
+    animation: glitch 1s infinite alternate;
+}
+
+.error-no::after {
+    color: rgba(255, 255, 255, 0.1); /* Slightly lighter for a subtle effect */
+}
+
+.error-name {
+    font-size: 2em;
+    margin: 0.5em 0;
+    animation: slideIn 0.5s ease-in-out;
+    color: var(--low-text-button);
+}
+.error-msg {
+    padding: 20px 125px;
+}
+.error-msg b {
+    color: var(--high-text-button);
+    font-weight: bold; /* Ensures the text is bold */
+}
+
+.error-msg p {
+    margin: 0.5em 0;
+    font-size: 1.2em;
+    line-height: 1.5;
+    opacity: 0;
+    animation: fadeInUp 0.5s ease-in forwards;
+}
+
+.error-msg p:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.error-msg p:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.error-msg p:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.go-back, .log-in {
+    background-color: var(--low-text-button);
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    animation: fadeInUp 0.5s ease-in forwards;
+}
+
+.log-in {
+    background-color: var(--low-text-button);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes float1 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* float1 up */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes glitch {
+    0% {
+        opacity: 0;
+        transform: translateX(0);
+    }
+    20% {
+        opacity: 1;
+        transform: translateX(-2px);
+    }
+    40% {
+        opacity: 0.5;
+        transform: translateX(2px);
+    }
+    60% {
+        opacity: 1;
+        transform: translateX(-2px);
+    }
+    80% {
+        opacity: 0.5;
+        transform: translateX(2px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(0);
+    }
+}
+
+.particle {
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #007B9E, #ff6c6c);
+    animation: float 6s infinite;
+    z-index: 0; /* Ensure particles are below the text */
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+    25% {
+        transform: translateY(-50px) scale(2);
+    }
+    50% {
+        transform: translateY(-100px) scale(3);
+    }
+    75% {
+        transform: translateY(-50px) scale(2);
+    }
+    100% {
+        transform: translateY(0) scale(1);
+    }
+}

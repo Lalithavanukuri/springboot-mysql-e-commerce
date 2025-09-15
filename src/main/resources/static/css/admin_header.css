@@ -1,0 +1,32 @@
+body {
+		z-index : 0;
+	}
+	.admin_header {
+		display : flex;
+		flex-direction : row-reverse;
+		margin-top : 0px;
+		margin-left : 20px;
+		margin-right : 20px;
+		margin-bottom : 20px;
+		padding : 0px 20px;
+       	height : 60px;
+       	border-radius : 0px 0px 10px 10px;
+       }
+       .header-content {
+       	display : flex;
+       	justify-content : center;
+       	align-items : end;
+       }
+       .header-content p {
+       	color : var(--base-text);
+       }
+       .details {
+       	display : flex;
+       	flex-direction : column;
+       }
+       .breaker {
+       	width : 95%;
+       	height : 2px;
+       	background-color : var(--base-text);
+       	margin-bottom : 20px;
+       }

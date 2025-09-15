@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui;
+}
+body {
+    background-color : var(--background);
+}
+.heading {
+    font-size : 35px;
+    margin-top : 20px;
+    text-align : center;
+    color : var(--base-text);
+}
+.product-container {
+    margin : 100px;
+    border-radius : 30px;
+    display : flex;
+    padding : 50px;
+    align-items : center;
+    justify-content : center;
+    gap : 200px;
+    background : linear-gradient(135deg , var(--high-text-button) , var(--low-text-button));
+}
+
+.container-product-image {
+    background-color : var(--card);  
+    border-radius : 20px;
+    padding : 20px;
+    max-width: 500px;
+    width: 100%;
+    gap: 20px;
+    border-radius : 10px;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 500px;
+    justify-content: center;
+    border-radius : 10px;
+
+}
+
+.image-container img {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+    border-radius : 10px;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.name,
+.price,
+.category, 
+.brand-name,
+.discount,
+.availability {
+    font-size: 20px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.left0 {
+	color : red;	
+}
+.left5 {
+	color : orange;		
+}
+.In-stock {
+	color : darkgreen;
+}
+
+.buttons {
+    display : flex;
+    justify-content : center;
+    padding : 50px 0px;
+    gap : 20px;
+}
+.buttons button {
+    padding : 10px 20px;
+    outline : none;
+    border : 1px solid grey;
+    border-radius : 10px;
+    color : var(--base-text);
+}
+#continue-button {
+    background-color : var(--low-text-button);
+}
+#cart-button {
+    background-color : var(--high-text-button);
+}
+.error {
+    text-align : center;
+    color : var(--high-text-button);
+}

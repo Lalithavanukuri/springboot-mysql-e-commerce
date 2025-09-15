@@ -1,0 +1,6 @@
+:root {
+    --pending : #FFBF00;
+    --shipped : #0047AB;
+    --delivered : #568203;
+    --cancelled : #B31B1B;
+}

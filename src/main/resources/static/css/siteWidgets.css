@@ -1,0 +1,67 @@
+* {
+            margin : 0;
+            padding : 0;
+            font-family : system-ui;
+        }
+        body {
+            background : var(--header-footer-color);
+        }
+        .logo-details {
+            padding-top : 30px;
+            display : flex;
+            flex-direction : column;
+            justify-content : center;
+            align-items : center;
+            gap : 20px;
+
+
+        }
+        .logo-details h3 {
+            color : var(--base-text);
+            font-size : 30px;
+        }
+        .logo {
+            background : linear-gradient(45deg , var(--high-text-button) , var(--low-text-button));	
+            background-clip: text;
+            color: transparent;
+            font-weight: bold;
+            font-size: 40px;
+            display : inline;
+        }
+        .site-map-banner-details {
+            margin-top : 30px;
+            display : flex;
+            flex-direction : column;
+            justify-content : center;
+            align-items : center;
+            gap : 20px;
+
+        }
+        .site-map-banner-details h3 {
+            color : var(--base-text);
+            font-size : 30px;
+        }
+        .siteMapBanner img {
+            width : 500px;
+        }
+        .advertisement-banner-details {
+            margin-top : 30px;
+            display : flex;
+            flex-direction : column;
+            justify-content : center;
+            align-items : center;
+            margin-bottom : 30px;
+            gap : 30px;
+        }
+        .advertisement-banner-details h3 {
+            color : var(--base-text);
+            font-size : 30px;
+        }
+        .advertisement-Banner {
+            display : grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap : 20px;
+        }
+        .advertisement-Banner img {
+            width : 500px;
+        }

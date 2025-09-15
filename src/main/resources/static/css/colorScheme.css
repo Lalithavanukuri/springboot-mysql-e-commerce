@@ -1,0 +1,8 @@
+:root {
+	--header-footer-color : #1C1C1C;	/* Header & footer (very-dark-grey) */
+	--background : #2E2E2E;			/* Background/Card (dark-grey)*/
+	--card : #6D6D6D;					/* Card/Background (light-grey)*/
+	--low-text-button : #007B9E;		/* Low importance text/buttons (light-blue)*/
+	--high-text-button : #FF6C6C;		/* High importance text/buttons (light-red)*/
+	--base-text : #D6D7DB;			/* Base text color & input fields (platinum)*/	
+}
