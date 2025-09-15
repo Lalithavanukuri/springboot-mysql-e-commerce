@@ -1,0 +1,169 @@
+* {
+        font-family: system-ui;
+      }
+      body {
+        background: var(--header-footer-color);
+      }
+      h2 {
+        color: var(--base-text);
+        text-align: center;
+        margin: 0px auto;
+      }
+      .container-filter-shippingCategory {
+	      height : 200px;
+	      display : flex;
+	      justify-content : center;
+	      align-items : center;
+	      gap : 20px;
+	  }
+	  .categry {
+	      display : flex;
+	      flex-direction : column;
+	      height : 150px;
+	      width : 200px;
+	      justify-content : center;
+	      align-items : center;
+	      border-radius : 20px;
+	  }
+	  .categry h1 {
+	  	font-size : 40px;
+	  }
+	  #pending-text {
+	  	color : var(--card);
+	  }
+	  .pending {
+	      background-color : var(--pending);
+	      color : var(--card);
+	  }
+	  .shipped {
+	      background-color : var(--shipped);
+	      color : var(--base-text);
+	  }
+	  .delivered {
+	      background-color : var(--delivered);
+	      color : var(--base-text);
+	  }
+	  .cancelled {
+	      background-color : var(--cancelled);
+	      color : var(--base-text);
+	  }
+	  .dropdown-container {
+	      margin: 20px;
+		  display: flex;
+		  flex-direction: column;
+	  }
+	  select {
+	      padding: 10px;
+	      font-size: 16px;
+	  }
+      .search-bar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+      }
+
+      .search-bar input {
+        width: 200px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        border: 1px solid grey;
+        outline: none;
+      }
+
+      .search-bar input:focus {
+        color: var(--high-text-button);
+        width: 250px;
+        transition: 0.5s ease;
+      }
+
+      .search-bar button {
+        background-color: var(--low-text-button);
+        padding: 10px 20px;
+        border: 1px solid grey;
+        border-radius: 10px;
+        color: var(--base-text);
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 16px;
+        text-align: left;
+      }
+      .name {
+      	display : flex;
+      	justify-content : left;
+      	align-items : center;
+      	gap : 20px;
+      }
+      th,
+      td {
+        border: 1px solid var(--card);
+        padding: 8px;
+      }
+      th {
+        background-color: var(--base-text);
+        font-weight: bold;
+      }
+      tbody tr:hover {
+       	background-color : var(--background);
+       }
+      td img {
+        width: 60px;
+      }
+      td p {
+        color: var(--base-text);
+      }
+      td h4 {
+        color: var(--base-text);
+      }
+      .status-pending {
+		padding : 0px 10px;
+	      text-align : center;
+	      background-color : var(--pending);
+	      color : var(--card);
+	      border-radius : 10px;
+	  }
+	  .status-shipped {
+		padding : 0px 10px;
+	      text-align : center;
+	      background-color : var(--shipped);
+	      color : var(--base-text);
+	      border-radius : 10px;
+	  }
+	  .status-delivered {
+		padding : 0px 10px;
+	      text-align : center;
+	      background-color : var(--delivered);
+	      color : var(--base-text);
+	      border-radius : 10px;
+	  }
+	  .status-cancelled {
+		padding : 0px 10px;
+	      text-align : center;
+	      background-color : var(--cancelled);
+	      color : var(--base-text);
+	      border-radius : 10px;
+	  }
+      .buttons {
+            display : flex;
+            flex-direction : column;
+            justify-content : center;
+            align-items : center;
+            gap : 20px;
+        }
+        .buttons button {
+            border-radius : 10px;
+            color : var(--base-text);
+            border : none;
+            outline : none;
+        }
+        .cancel {
+        	padding : 5px 10px;
+            background-color : var(--high-text-button);
+        }
+        .update {
+        	padding : 5px 10px;
+            background-color : var(--low-text-button);
+        }

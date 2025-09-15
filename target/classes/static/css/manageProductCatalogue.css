@@ -1,0 +1,63 @@
+* {
+            font-family : system-ui;
+        }
+        body {
+            background : var(--header-footer-color);
+        }
+        h2 {
+            color : var(--base-text);
+            text-align : center;
+            margin : 0px auto;
+        }
+        .details-product {
+            display : flex;
+            align-items : center;
+            gap : 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 16px;
+            text-align: left;
+        }
+        tbody tr:hover {
+        	background-color : var(--background);
+        }
+        th, td {
+            border: 1px solid var(--card);
+            padding: 8px;
+        }
+        th {
+            background-color: var(--base-text);
+            font-weight: bold;
+        }
+        td img {
+            width : 60px;
+        }
+        td p {
+            color : var(--base-text);
+        }
+        td h4 {
+            color : var(--base-text);
+        }
+        .buttons {
+            display : flex;
+            flex-direction : column;
+            justify-content : center;
+            align-items : center;
+            gap : 20px;
+        }
+        .buttons button {
+            padding : 5px 10px;
+            border-radius : 10px;
+            color : var(--base-text);
+            border : none;
+            outline : none;
+        }
+        .delete {
+            background-color : var(--high-text-button);
+        }
+        .update {
+            background-color : var(--low-text-button);
+        }

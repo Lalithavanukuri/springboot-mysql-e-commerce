@@ -1,0 +1,28 @@
+* {
+    font-family: system-ui;
+}
+.SiteMapBanner {
+	z-index : -1;
+    width: 900px;
+    margin: 10px auto;
+    position: relative; /* To make it a positioning context */
+}
+.SiteMapBanner img {
+    width: 100%; /* Ensure the image scales to fit the container */
+    border-radius : 10px;
+}
+.SiteMapBanner p {
+	width : 100%;
+	text-align : center;
+    font-size: 35px;
+    font-weight: 500;
+    color: var(--base-text);
+    position: absolute;
+    bottom: 4px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+}
+body {
+    margin: 0;
+    padding-top: 60px; /* Adjust to match the height of the fixed header */
+}

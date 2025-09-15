@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui;
+}
+body {
+  z-index : 1;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  height: 90px;
+  width: 100%;
+  background-color : var(--header-footer-color);
+}
+
+.navbar {
+  background-color : var(--header-footer-color);
+    height: 100%;
+    max-width: 1572px;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo a {
+  background : linear-gradient(135deg , var(--high-text-button) , var(--low-text-button));	
+  background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.sections button {
+  background-color : var(--card);
+  margin: 0 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  color : black;
+}
+
+.profile {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.profile img {
+  height: 18px;
+}
+.cart {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.cart img {
+  width : 18px;
+  height: 18px;
+}
+
+#aboutUsBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+#aboutUsBtn img {
+  width : 18px;
+  height: 18px;
+}
+.orders {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.orders img {
+  width : 18px;
+  height: 18px;
+}
+
+#log-in {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background : linear-gradient(135deg , var(--high-text-button) , var(--low-text-button));	
+}
+
+.sections button:hover {
+  background-color : var(--card);
+  border: 1px solid grey;
+  color: black;
+  transition: 0.5s ease;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.search-bar input {
+  width: 200px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid grey;
+  outline: none;
+}
+
+.search-bar input:focus {
+  color : var(--high-text-button);
+  width: 250px;
+  transition: 0.5s ease;
+}
+
+.search-bar button {
+  background-color : var(--low-text-button);
+  padding: 10px 20px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  color : var(--base-text);
+}
+.category {
+  display : flex;
+  gap : 15px;
+}
+#category {
+  color : black;
+}
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  position: fixed;
+  top: 0;
+  right: -33%;
+  width: 33%;
+  height: 100%;
+  background-color: var(--header-footer-color);
+  backdrop-filter: blur(5px);
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
+  transition: right 0.5s ease;
+  padding: 20px 50px;
+  box-sizing: border-box;
+  color : var(--base-text);
+}
+
+.back-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: var(--card);
+  padding: 10px 20px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  color: var(--base-text);
+}
+
+.back-button:hover {
+  background-color: #ddd;
+  transition: background-color 0.3s;
+  color : var(--background);
+}
+
+.profile-form.open {
+  right: 0;
+}
+
+.profile-form.slide-out {
+  right: -33%;
+}
+
+.avatar {
+  align-self: center;
+  border: 2px solid grey;
+  border-radius: 50%;
+}
+
+.avatar img {
+  border-radius: 50%;
+  padding: 26px 0px;
+}
+
+#update-btn {
+  width: 100px;
+  align-self: center;
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: var(--low-text-button);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#log-out-btn {
+  width: 100px;
+  align-self: center;
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: var(--high-text-button);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}

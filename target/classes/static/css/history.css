@@ -1,0 +1,191 @@
+* {
+	font-family: system-ui;
+}
+
+body {
+	background: var(--background);
+}
+
+.container-filter-shippingCategory {
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.categry {
+	display: flex;
+	flex-direction: column;
+	height: 150px;
+	width: 200px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+}
+
+.categry h1 {
+	font-size: 40px;
+}
+
+#pending-text {
+	color: var(--card);
+}
+
+.pending {
+	background-color: var(--pending);
+	color: var(--card);
+}
+
+.shipped {
+	background-color: var(--shipped);
+	color: var(--base-text);
+}
+
+.delivered {
+	background-color: var(--delivered);
+	color: var(--base-text);
+}
+
+.cancelled {
+	background-color: var(--cancelled);
+	color: var(--base-text);
+}
+
+.dropdown-container {
+	margin: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+select {
+	padding: 10px;
+	font-size: 16px;
+}
+
+h2 {
+	color: var(--base-text);
+	text-align: center;
+	margin: 20px auto;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 20px 0;
+	font-size: 16px;
+	text-align: left;
+}
+
+thead {
+	background-color: var(--card);
+}
+
+th, td {
+	border: 1px solid var(--header-footer-color);
+	padding: 8px;
+}
+
+th {
+	font-weight: bold;
+}
+
+td img {
+	width: 60px;
+}
+
+td p {
+	color: var(--base-text);
+}
+
+td h4 {
+	color: var(--base-text);
+}
+
+tbody tr:hover {
+	background: var(--card);
+}
+
+.details-product {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.status-pending {
+	text-align: center;
+	background-color: var(--pending);
+	color: var(--card);
+	border-radius: 10px;
+}
+
+.status-shipped {
+	text-align: center;
+	background-color: var(--shipped);
+	color: var(--base-text);
+	border-radius: 10px;
+}
+
+.status-delivered {
+	text-align: center;
+	background-color: var(--delivered);
+	color: var(--base-text);
+	border-radius: 10px;
+}
+
+.status-cancelled {
+	text-align: center;
+	background-color: var(--cancelled);
+	color: var(--base-text);
+	border-radius: 10px;
+}
+
+.buttons {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.buttons button {
+	border-radius: 10px;
+	color: var(--base-text);
+	border: none;
+	outline: none;
+}
+
+.view-button {
+	padding: 5px 17px;
+	background-color: var(--low-text-button);
+}
+
+.cancel-button {
+	padding: 5px 17px;
+	background-color: var(--high-text-button);
+}
+
+.cancel {
+	padding: 5px 10px;
+	background-color: var(--high-text-button);
+}
+
+.main-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.main-button button {
+	padding: 10px 20px;
+	border-radius: 10px;
+	background-color: var(--low-text-button);
+	color: var(--base-text);
+}
+
+#empty-msg {
+	color: var(--high-text-button);
+	margin-bottom: 20px;
+	text-align: center;
+}
