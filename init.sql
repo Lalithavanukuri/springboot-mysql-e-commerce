@@ -40,8 +40,11 @@ CREATE TABLE customer (
 INSERT INTO customer (name, email, password, last_login_date)
 VALUES
 ('John Doe', 'john@example.com', 'john123', NOW()),
-('Jane Smith', 'jane@example.com', 'jane123', NOW()),
-('Alice Brown', 'alice@example.com', 'alice123', NOW());
+('Jane Smith', 'jane@example.com', 'jane123', NOW());
+
+-- Insert Lalitha as a customer (with all fields specified)
+INSERT INTO customer (cust_id, name, email, password, last_login_date, address, phone, profile_image, created_at)
+VALUES (4, 'Lalitha', 'lalithaveni16@gmail.com', '$2a$10$cdUyRSTIWXCnFTaKWCaAkOUJK/IPmEvtNr8j6DWzeXTRRwCJQiWOq', '2025-09-16 20:24:35', '101,sri,gunadala,vij', '8247429297', NULL, '2025-09-16 20:24:19');
 
 -- ===================================
 -- Table: product
